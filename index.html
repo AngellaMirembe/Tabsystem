@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tab Data Entry</title>
 </head>
+
 <body>
   <form action="">
+    <fieldset>
+      <legend>
+        Team Data Entry Form
+      </legend>
+    
     <table border="1">
       <tr>
         <th>
           Team Name
         </th>
         <td colspan="3">
-          <input type="text" placeholder="Enter Team name here">
+          <input type="text" placeholder="Enter Team name here" style="width: 98%;">
         </td>
       </tr>
       <tr>
-        <th>
+        <th rowspan="3">
           Team Speakers
         </th>
-        
+
         <td>
-          <input type="text" placeholder="Seaker 1">
+          <input type="text" placeholder="Speaker 1">
+        </td>
+        <td>
+          <input type="radio" name="gender1"> Male
+        </td>
+        <td>
+          <input type="radio" name="gender1"> Female
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" placeholder="Speaker 2">
         </td>
 
         <td>
-          <input type="text" placeholder="Seaker 2">
+          <input type="radio" name="gender2"> Male
+        </td>
+        <td>
+          <input type="radio" name="gender2"> Female
+        </td>
+
+
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" placeholder="Speaker 3">
         </td>
 
         <td>
-          <input type="text" placeholder="Seaker 3">
+          <input type="radio" name="gender3"> Male
+        </td>
+        <td>
+          <input type="radio" name="gender3"> Female
         </td>
       </tr>
     </table> <br>
 
     <button>
       Submit
+    </button><br><br>
+
+    <button>
+      Finish
     </button>
+    </fieldset>
   </form>
 
   <script></script>
 </body>
+
 </html>
