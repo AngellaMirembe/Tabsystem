@@ -7,15 +7,12 @@
   <title>Tab Data Entry</title>
 
   <style>
-    th {
-      
-    }
 
     button {
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-top: 3px;
-      padding-bottom: 3px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       border: none;
       background-color: green;
       color: white;
@@ -24,8 +21,10 @@
 
     fieldset {
       border-color: green;
-      border-radius: 5px;
+      border-radius: 10px;
       display: inline-block;
+      border-style: solid;
+      color: green;
     }
 
     table{
@@ -33,14 +32,41 @@
       color: white;
     }
 
-    .finish-button {
-      margin-left: 76%;
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
+    
+    h2 {
+      color: green;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border: solid;
+            border-width: 2px;
+            border-color: green;
+            border-radius: 20px;
+            padding: 15px;
+            
+        }
+  
+
     
   </style>
 </head>
 
 <body>
+<div class="container">
+  <h2>
+    Welcome To Your Tab System
+  </h2>
   <form action="">
     <fieldset>
       <legend>
@@ -101,7 +127,8 @@
         </td>
       </tr>
     </table> <br>
-
+    
+    <div class="buttons">
     <button class="submit-button">
       Submit
     </button>
@@ -109,9 +136,10 @@
     <button class="finish-button">
       Finish
     </button>
+    </div>
     </fieldset>
   </form>
-
+</div>
   <script></script>
 </body>
 
