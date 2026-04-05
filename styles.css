@@ -1,50 +1,46 @@
+button {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+}
 
-    button {
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border: none;
-      background-color: green;
-      color: white;
-      border-radius: 15px;
-    }
+fieldset {
+  border-color: green;
+  border-radius: 10px;
+  display: inline-block;
+  border-style: solid;
+  color: green;
+}
 
-    fieldset {
-      border-color: green;
-      border-radius: 10px;
-      display: inline-block;
-      border-style: solid;
-      color: green;
-    }
+table {
+  background-color: green;
+  color: white;
+}
 
-    table{
-      background-color: green;
-      color: white;
-    }
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .buttons{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    h2 {
-      color: green;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+h2 {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    
-    .container {
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            border: solid;
-            border-width: 2px;
-            border-color: green;
-            border-radius: 20px;
-            padding: 15px;
-            
-        }
-  
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: solid;
+  border-width: 2px;
+  border-color: green;
+  border-radius: 20px;
+  padding: 15px;
+}
