@@ -14,7 +14,7 @@
     <h2>
       Welcome To Your Tab System
     </h2>
-    <form action="">
+    <form action="" id="teamForm">
       <fieldset>
         <legend>
           Team Data Entry Form
@@ -26,7 +26,7 @@
               Team Name
             </th>
             <td colspan="3">
-              <input type="text" placeholder="Enter Team name here" style="width: 98%;" required>
+              <input type="text" placeholder="Enter Team name here" style="width: 98%;" required id="teamName">
             </td>
           </tr>
           <tr>
@@ -35,27 +35,26 @@
             </th>
 
             <td>
-              <input type="text" placeholder="Speaker 1" required>
+              <input type="text" placeholder="Speaker 1" required id="speaker1">
             </td>
             <td>
-              <input type="radio" name="gender1"> Male
+              <input type="radio" name="gender1" required value="Male"> Male
             </td>
             <td>
-              <input type="radio" name="gender1"> Female
+              <input type="radio" name="gender1" value="Female"> Female
             </td>
 
           </tr>
 
           <tr>
             <td>
-              <input type="text" placeholder="Speaker 2" required>
+              <input type="text" placeholder="Speaker 2" required id="speaker2">
             </td>
 
             <td>
-              <input type="radio" name="gender2"> Male
-            </td>
+              <input type="radio" name="gender2" required value="Male"> Male
             <td>
-              <input type="radio" name="gender2"> Female
+              <input type="radio" name="gender2" value="Female"> Female
             </td>
 
 
@@ -63,19 +62,19 @@
 
           <tr>
             <td>
-              <input type="text" placeholder="Speaker 3" required>
+              <input type="text" placeholder="Speaker 3" required id="speaker3">
             </td>
 
             <td>
-              <input type="radio" name="gender3"> Male
+              <input type="radio" name="gender3" required value="Male"> Male
             </td>
             <td>
-              <input type="radio" name="gender3"> Female
+              <input type="radio" name="gender3" value="Female"> Female
             </td>
           </tr>
         </table> <br>
 
-        <div class="buttons">
+        <div class="buttons" type="submit">
           <button class="submit-button">
             Submit
           </button>
