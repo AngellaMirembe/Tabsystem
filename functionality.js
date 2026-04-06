@@ -43,6 +43,13 @@ const finishButton = document.getElementById("finishButton");
 const container = document.getElementById("container");
 const output = document.getElementById("output");
 
+ let teams = JSON.parse(localStorage.getItem("teams")) || [];
+
+  if(teams.length %2 !== 0){
+  alert("Odd number of teams. Please add one more team to proceed.");
+  return;
+}
+
 
 finishButton.addEventListener("click", function(){
   container.style.display = "none"; //hide table
@@ -50,7 +57,10 @@ finishButton.addEventListener("click", function(){
   //testing display
   output.innerHTML = `
   <h2>Teams submitted successfully!</h2>
+  
   `;
+
+ 
 });
 
 console.log(finishButton);
