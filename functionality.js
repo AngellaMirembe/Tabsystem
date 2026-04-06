@@ -39,32 +39,18 @@ form.reset();
 
 
 //finish button logic
-document.getElementById("finishButton").addEventListener("click", function(){
+const finishButton = document.getElementById("finishButton");
+const container = document.getElementById("container");
+const output = document.getElementById("output");
 
-  let teams = JSON.parse(localStorage.getItem("teams"))||[];
 
-  //check if number of teams are even
-  if(teams.length %2!==0){
-    alert("You have an  odd number of teams. Please add a swing team.");
-    return;
-  }
-
-  //hide form
-  document.getElementById("teamForm").style.display = "none";
-
-  const output = document.getElementById("output");
-  output.innerHTML = "<h2>Teams Entered</h2>";
-
-  //display teams
-  teams.forEach((team, index)=>{
-    output.innerHTML+=`
-    <div>
-    <h3>Team ${index+1}: ${team.teamName}</h3>
-    <ul>
-    ${team.speakers.map(
-    s=> `<li>${s.name}(${s.gender})</li>`).join("")}
-    </ul>
-    </div>
-    `;
-  });
+finishButton.addEventListener("click", function(){
+  container.style.display = "none"; //hide table
+  output.style.display = "block"; //show result section
+  //testing display
+  output.innerHTML = `
+  <h2>Teams submitted successfully!</h2>
+  `;
 });
+
+console.log(finishButton);
