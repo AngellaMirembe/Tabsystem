@@ -39,28 +39,33 @@ form.reset();
 
 
 //finish button logic
-const finishButton = document.getElementById("finishButton");
-const container = document.getElementById("container");
-const output = document.getElementById("output");
-
- let teams = JSON.parse(localStorage.getItem("teams")) || [];
-
-  if(teams.length %2 !== 0){
-  alert("Odd number of teams. Please add one more team to proceed.");
-  return;
-}
-
-
 finishButton.addEventListener("click", function(){
-  container.style.display = "none"; //hide table
-  output.style.display = "block"; //show result section
-  //testing display
-  output.innerHTML = `
-  <h2>Teams submitted successfully!</h2>
-  
-  `;
+  let teams = JSON.parse(localStorage.getItem("teams")) || [];
 
- 
+  console.log("All teams:", teams);
+
+  if (teams.length === 0){
+    alert("No teams registered yet!");
+    return;
+  }
+
+  if (teams.length %2 !== 0){
+    alert("Odd number of teams! Please register one more team to proceed.");
+    return;
+  }
+
+  let outputHTML = "<h2>Registered Teams:</h2>";
+
+  teams.forEach(function(team, index){
+    outputHTML += `<p>Team ${index + 1}: ${team.teamName}</p>`;});
+
+    output.innerHTML = outputHTML;
+
+    //clear data after finish
+    localStorage.removeItem("teams");
+
+    container.style.display = "none";
+    output.style.display = "block";
 });
 
 console.log(finishButton);
