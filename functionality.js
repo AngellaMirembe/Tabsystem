@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 const form = document.getElementById("teamForm");
 
 form.addEventListener("submit", function(event){
@@ -39,6 +41,7 @@ form.reset();
 
 
 //finish button logic
+
 finishButton.addEventListener("click", function(){
   let teams = JSON.parse(localStorage.getItem("teams")) || [];
 
@@ -56,16 +59,34 @@ finishButton.addEventListener("click", function(){
 
   let outputHTML = "<h2>Registered Teams:</h2>";
 
-  teams.forEach(function(team, index){
-    outputHTML += `<p>Team ${index + 1}: ${team.teamName}</p>`;});
 
-    output.innerHTML = outputHTML;
+  teams.forEach((team, index)=>{
+    output.innerHTML += `<div style="border:2px solid green; border-radius:10px; display: inline-block; padding:10px; margin:10px;">
+    <h3>Team ${index + 1}: ${team.teamName}</h3>
+    <p>Speaker 1: ${team.speakers[0].name} (${team.speakers[0].gender})</p>
+    <p>Speaker 2: ${team.speakers[1].name} (${team.speakers[1].gender})</p>
+    <p>Speaker 3: ${team.speakers[2].name} (${team.speakers[2].gender})</p>
+    </div>`;
+  });
+    
 
-    //clear data after finish
-    localStorage.removeItem("teams");
+  teamsDisplay.innerHTML = outputHTML;
 
+  
+  pairButton.style.display = "block";
+    
+
+    
     container.style.display = "none";
-    output.style.display = "block";
+    output.style.display = "block"; 
 });
 
 console.log(finishButton);
+
+
+
+
+});
+
+
+console.log(pairButton);
