@@ -89,4 +89,14 @@ console.log(finishButton);
 });
 
 
+//pairing logic
+pairButton.addEventListener("click", function(){
+  console.log("Pairing teams...");
+  let teams = JSON.parse(localStorage.getItem("teams")) || [];
+
+  console.log("Paired teams:", teams);
+});
+
+
+
 console.log(pairButton);

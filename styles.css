@@ -15,11 +15,13 @@ fieldset {
   display: inline-block;
   border-style: solid;
   color: green;
+  max-width: 80%;
 }
 
 table {
   background-color: green;
   color: white;
+  max-width: 70%;
 }
 
 .buttons {
@@ -36,7 +38,7 @@ h2 {
 
 .container {
   width: 100%;
-  max-width: 500px;
+  max-width: 85%;
   margin: 0 auto;
   border: solid;
   border-width: 2px;
