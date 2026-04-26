@@ -7,7 +7,6 @@ button {
   background-color: green;
   color: white;
   border-radius: 15px;
-  overflow-x: hidden;
 }
 
 .container {
@@ -17,12 +16,13 @@ button {
   border-color: green;
   border-radius: 20px;
   padding: 15px;
-  max-width: 80%;
-  width: 80%;
+  max-width: 90%;
+  width: 90%;
   overflow-x: hidden;
 }
 
 fieldset {
+  margin: 0 auto;
   border-color: green;
   border-radius: 10px;
   border-style: solid;
@@ -35,8 +35,9 @@ fieldset {
 table {
   background-color: green;
   color: white;
-  
+  margin: 0 auto;
 }
+
 
 .buttons {
   display: flex;
@@ -48,6 +49,7 @@ table {
 h2 {
   color: green;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 
