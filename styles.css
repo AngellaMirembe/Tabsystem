@@ -16,26 +16,31 @@ button {
   border-color: green;
   border-radius: 20px;
   padding: 15px;
-  max-width: 100%;
-  width: 100%;
+  max-width: 90%;
+  width: 90%;
   overflow-x: hidden;
+  max-width: 600px;
+  box-sizing: border-box;
 }
 
 fieldset {
   border-color: green;
   border-radius: 10px;
- 
   border-style: solid;
   color: green;
   display: flex;
   flex-direction: column;
-  max-width: 90%;
+  width: 90%;
 }
 
 table {
   background-color: green;
   color: white;
-  
+  width: 100%;
+}
+
+.table-wrapper {
+  overflow-x: auto;
 }
 
 .buttons {
