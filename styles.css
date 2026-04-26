@@ -16,14 +16,15 @@ button {
   border-color: green;
   border-radius: 20px;
   padding: 15px;
-  overflow-x: scroll;
   max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 fieldset {
   border-color: green;
   border-radius: 10px;
-  display: inline-block;
+ 
   border-style: solid;
   color: green;
   display: flex;
