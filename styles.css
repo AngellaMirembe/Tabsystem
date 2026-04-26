@@ -16,8 +16,8 @@ button {
   border-color: green;
   border-radius: 20px;
   padding: 15px;
-  max-width: 90%;
-  width: 90%;
+  max-width: 80%;
+  width: 80%;
   overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ fieldset {
   color: green;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
 }
 
 table {
